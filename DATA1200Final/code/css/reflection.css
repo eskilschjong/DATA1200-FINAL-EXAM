@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+
+}
+
+.nav-bar {
+  display: flex;
+
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 40px 15px;
+}
+
+.nav-links ul a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links ul a:hover {
+  color: #fbae3c;
+}
+
+.text {
+  color: #fbae3c;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  translate: (-50%, -50%);
+}
+
+.text-animation {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  top: 27%;
+  left: 20%;
+  transform: translate(-27%, -20%);
+}
+
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  text-align: center;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #fbae3c;
+  cursor: pointer;
+  padding: 10px;
+  width: 40%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  margin: 18px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #fbae3c;
+  color: #001220;
+  font-family: sans-serif;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin: auto;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 3px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  position: relative;
+  text-align: justify;
+  color: white;
+  line-height: 1.5;
+}

@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  background-color: black;
+  background-size: cover;
+}
+
+#myVideo {
+  position: fixed;
+  background-size: contain;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  size: auto;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 20%;
+  z-index: -1;
+}
+
+#pauseButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fbae3c;
+  cursor: pointer;
+}
+
+#pauseButton:hover {
+  background: #fbae3c;
+  color: black;
+}
+
+.main-header {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: transparent;
+  background: url(/img/animation3.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: background-animation 10s linear infinite;
+}
+
+@keyframes background-animation {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 40px 15px;
+}
+
+.nav-links ul a {
+  color: #fbae3c;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links ul a:hover {
+  color: transparent;
+  background: url(/img/animation2.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: background-animation 3s linear infinite;
+  text-shadow:1px 1px 10px rgb(255, 220, 124), 1px 1px 10px rgb(255, 210, 125);
+}

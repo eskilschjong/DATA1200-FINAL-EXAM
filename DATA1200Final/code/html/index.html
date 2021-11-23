@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/code/css/style.css" />
+    <link rel="stylesheet" href="/code/css/master.css" />
+    <title>Welcome!</title>
+    <link rel="shortcut icon" href="/img/icon.png">
+  </head>
+  <div class="nav-bar">
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="index.html"><strong>Welcome</strong></a>
+          <a href="reflection.html"><strong>Reflection</strong></a>
+          <a href="information.html"><strong>Information</strong></a>
+          <a href="accessibility.html"><strong>Accessibility</strong></a>
+          <a href="fun"><strong>Fun</strong></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="/img/animatedNeon.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="container">
+      <div class="main-header">
+        <h1>
+          WELCOME TO OUR PAGE! <br />WE ARE FIRST YEAR STUDENTS <br />STUDYING
+          APPLIED COMPUTER SIENCE <br />AT OSLOMET
+        </h1>
+      </div>
+    </div>
+    <button id="pauseButton" onclick="Pause()">Pause backround</button>
+  </body>
+</html>
+<script>
+  
+  var video = document.getElementById("myVideo");
+  
+  var btn = document.getElementById("pauseButton");
+  
+  function Pause() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause backround";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play backround";
+    }
+  }
+  </script>
